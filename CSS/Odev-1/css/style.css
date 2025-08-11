@@ -1,0 +1,60 @@
+body {
+    text-align: center; /* body içinde ki bütün herşeyi yatayda ortalamak için */
+    background-color: #FFFFFF;
+    color: #5B5B5F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color: #6B4226;
+}
+h2{
+    color: #A1592A;
+}
+
+span{ /* Sayfa menülerinin arasında ki boşluğu span ile inline kullandım*/
+    text-decoration: underline;
+}
+a{
+    color: #D97706;
+}
+
+img{ /* Resimlerin yükseklik ayarı için css içine eklendi */
+    height: 440px;
+    width: auto; /* Genişlik yükseliğe göre otomatik ayarlanıyor*/
+}
+
+.underline{/* Altı çizili yazılar için kullandığım sınıf */
+    text-decoration: underline;
+}
+
+.imageGrid{     /*3x2 lik bir grid ile resimleri göstermek için*/
+    width: 1050px;      /* Grid'in toplam genişliği */
+    margin: 0 auto;   /* Grid'i ortalamak için. Block seviyesi elemanlarda çalışır */  
+    display: grid; /* Tür olarak Grid seçtim */
+    grid-template-columns: repeat(3, 1fr); /* Kolon Sayısı : 1fr her sütun aynı boyda olması için */
+    gap: 0px; /* yatay ve dikey boşluk */
+   
+}
+
+
+.urunListesi {
+  list-style-position: inside;  /* Numaralar içerde gösterilir */
+  display: inline-block;         /* Liste genişliği kadar yer kaplar */
+  text-align: center; /* Block seviyesinde elemanların yazılarını ortalar */
+  padding-left: 0; /*Sol kenar ile içerik arası boşluk. Tarafıyı default olarak soldan boşluk bırakıır */
+}
+
+.sayfaBasi { /* Ürünler Sayfasında Safya Başına Dönmek için kullandığım buton yapısı*/
+    position: fixed;    /* Ekranda ki konumu sabitleme */
+    left: 450px;        /* Soldan mesafe */
+    bottom: 20px;      /* Alttan mesafe */
+    background-color: #514f4f; /* Arka plan rengi */
+    color: #D97706; /* Yazı Rengi */
+    padding: 15px 25px; /* Yazısı kapsayan kutu ölçüleri */
+    font-size: 20px;    /* Yazı Boyutu */
+    text-decoration: none; /* Bağlantııı (link) elemanların altı çizili özelliğini kaldırır */
+    border-radius: 5px; /* Köşe Yuvarlatmaları */
+    z-index: 1000; /* Üstüste gelen elemanların (layer gibi düşünülebilir) en önde durmasını sağlar. En büyük en önde durur */
+}
+
+
